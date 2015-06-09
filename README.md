@@ -41,20 +41,20 @@ Requirements:
 Quick Start
 ===========
 
-jELC contains the following files
-    - README.md 
-    - data      : directory containing example datasets 
-    - jELC.jar  : jar file containing source and binary code 
-    - elc.jar   : runnable jar file for general usage (command line)
-    - ucr.jar   : runnable jar file for experiments on UCR datasets (command line)
- 
-1) For application and development integrate jELC into an IDE (e.g. Eclipse). See package examples for example applications. 
+Consider the following files:
 
-2) For quick application using the command line, specify options and call 
+* data     : directory containing example datasets 
+* jELC.jar : jar file containing source and binary code 
+* elc.jar  : runnable jar file for general usage (command line)
+* ucr.jar  : runnable jar file for experiments on UCR datasets (command line)
+ 
+1. For application and development integrate jELC.jar into an IDE (e.g. Eclipse). See package examples for example applications. 
+
+2. For quick application using the command line, specify options and call 
 
        java -jar ELC options
 
-3) For experiments using UCR datasets, specify options and call
+3. For experiments using UCR datasets, specify options and call
 
        java -jar UCR options
        

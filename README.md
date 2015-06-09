@@ -76,9 +76,7 @@ Each dataset consists of a directory containing a training and a test file datas
 
 ## Classifier Options 
 
-CLF_OPTIONS are classifier options for setting the experimental protocol and 
-for specifying elastic linear classifiers. These options are valid for ELC and 
-UCR.
+CLF_OPTIONS are classifier options for setting the experimental protocol and for specifying elastic linear classifiers. These options are valid for *elc.jar* and *ucr.jar*.
 
 **CLF_OPTIONS:**
 ```

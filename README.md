@@ -118,16 +118,15 @@ CLF_OPTIONS are classifier options for setting the experimental protocol and for
             5 -- solver detailed progress info
 ```
 
-Usage of ELC
-============
+## Usage of elc.jar
 
-Command Line Usage
-------------------
+### Command Line Usage
 
-USAGE:
-    java -jar ELC -train train_file [-test test_file] [-Z {0|1}] [clf_opts]
+**USAGE:**
+    ```java -jar ELC -train train_file [-test test_file] [-Z {0|1}] [clf_opts]```
 
-OPTIONS:
+**OPTIONS:**
+```
 -train <string> : File name of train set (mandatory)
 -test <string>  : File name of test set (optional)
 -Z              : Toggles z-normalization of each time series with mean zero 
@@ -135,7 +134,7 @@ OPTIONS:
                   0 -- OFF: no normalization 
                   1 -- ON : performs normalization
 clf_opts        : list of options as described in CLF_OPTIONS
-
+```
 
 Examples
 --------

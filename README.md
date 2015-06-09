@@ -150,10 +150,9 @@ In the following examples, *train_file* and *test_file* refer to the paths of th
    
    Uses train_file to fit elastic logistic regression. Estimates predictive accuracy on test_file. 
 
+3. ```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1```
 
-```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1```
-
-Uses train_file to fit elastic logistic regression with initial learning rate l = 0.1. Estimates predictive accuracy on test_file.  
+   Uses train_file to fit elastic logistic regression with initial learning rate l = 0.1. Estimates predictive accuracy on   test_file.  
 
 ```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1 -R 1 -r 0.05```
 

@@ -92,7 +92,9 @@ for specifying elastic linear classifiers. These options are valid for ELC and
 UCR.
 
 CLF_OPTIONS:
+
 -S int    : Type of solver (default S = 0)
+
             0 -- elastic perceptron 
             1 -- elastic margin perceptron 
             2 -- elastic logistic regression 

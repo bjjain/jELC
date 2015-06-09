@@ -15,7 +15,7 @@ jELC uses the one-against-all method for multi-class classification problems. Ad
 
 Details on the algorithms can be found in the paper [Generalized Gradient Learning on Time Series under Elastic Transformations](http://arxiv.org/abs/1502.04843).
 
-Requirements: 
+**Requirements:**
 
 * Java 7 and higher
 * no dependencies to other libraries

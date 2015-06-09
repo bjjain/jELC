@@ -41,22 +41,15 @@ Requirements:
 Quick Start
 ===========
 
-Consider the following files:
-
-* data     : directory containing example datasets 
-* jELC.jar : jar file containing source and binary code 
-* elc.jar  : runnable jar file for general usage (command line)
-* ucr.jar  : runnable jar file for experiments on UCR datasets (command line)
- 
-1. For application and development integrate jELC.jar into an IDE (e.g. Eclipse). See package examples for example applications. 
+1. For application and development integrate jELC.jar into an IDE (e.g. Eclipse). 
 
 2. For quick application using the command line, specify options and call 
 
-       java -jar ELC options
+         java -jar ELC options
 
 3. For experiments using UCR datasets, specify options and call
 
-       java -jar UCR options
+         java -jar UCR options
        
 See "Classifier Options" and "Command Line Usage" for a detailed description.
  

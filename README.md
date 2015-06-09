@@ -41,12 +41,12 @@ Requirements:
 Quick Start
 ===========
 
-Unzip jELC.zip. The directory jELC contains the following files
-    - readme
-    - data     : directory containing example datasets 
-    - jELC.jar : jar file containing source and binary code 
-    - elc.jar  : runnable jar file for general usage (command line)
-    - ucr.jar  : runnable jar file for experiments on UCR datasets (command line)
+jELC contains the following files
+    - README.md 
+    - data      : directory containing example datasets 
+    - jELC.jar  : jar file containing source and binary code 
+    - elc.jar   : runnable jar file for general usage (command line)
+    - ucr.jar   : runnable jar file for experiments on UCR datasets (command line)
  
 1) For application and development integrate jELC into an IDE (e.g. Eclipse). See package examples for example applications. 
 

@@ -2,25 +2,26 @@
 jELC is a Java library that implements elastic linear classifiers for time series classification. Elastic linear classifiers extend linear classifiers to time series under dynamic time warping. This library currently supports the 
 following algorithms:
 
-    - elastic perceptron 
-    - elastic margin perceptron
-    - elastic logistic regression
-    - elastic linear support vector machine.
+* elastic perceptron 
+* elastic margin perceptron
+* elastic logistic regression
+* elastic linear support vector machine.
 
 jELC uses the one-against-all method for multi-class classification problems.
 Additional features are
 
-    - L1 and L2 regularization
-    - cross-validation and leave-one-out validation
-    - automated parameter selection
-    - supports experiments on UCR time series datasets.
+* L1 and L2 regularization
+* cross-validation and leave-one-out validation
+* automated parameter selection
+* supports experiments on UCR time series datasets.
 
 Requirements: 
-    - Java 7 and higher
-    - no dependencies to other libraries
+
+* Java 7 and higher
+* no dependencies to other libraries
 
 
-#Table of Contents
+## Table of Contents
 
 - Quick Start
 - Data Format
@@ -43,7 +44,7 @@ Quick Start
 Unzip jELC.zip. The directory jELC contains the following files
     - readme
     - data     : directory containing example datasets 
-    - jELC.zip : archive file containing source and binary code 
+    - jELC.jar : jar file containing source and binary code 
     - elc.jar  : runnable jar file for general usage (command line)
     - ucr.jar  : runnable jar file for experiments on UCR datasets (command line)
  

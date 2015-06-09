@@ -284,16 +284,10 @@ If you use any of the UCR time series datasets provided with this release, pleas
 
 http://www.cs.ucr.edu/~eamonn/time_series_data/
 	
-and agree to the terms of use. Please cite the UCR datasets as 
+and agree to the terms of use.
 
-> Keogh, E., Zhu, Q., Hu, B., Hao. Y.,  Xi, X., Wei, L. & Ratanamahatana, C.A. (2011). 
-> *The UCR Time Series Classification/Clustering Homepage*: http://www.cs.ucr.edu/~eamonn/time_series_data/
+## Contact
 
-
-
-Contact
-=======
-
-For any questions and comments, please email brijnesh.jain@gmail.com
+For any questions and comments, please email brijnesh.jain(at)gmail.com
 
 

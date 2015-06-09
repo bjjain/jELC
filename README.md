@@ -26,10 +26,10 @@ Requirements:
 - Data Format
 - Datasets
 - Classifier Options
-- Usage of ELC
+- Usage of elc.jar
     - Command Line Usage
     - Examples 
-- Usage of UCR
+- Usage of ucr.jar
     - Command Line Usage
     - Examples
 - Usage of API
@@ -65,7 +65,7 @@ If labels are not available, for example when predicting the class of unseen tim
 
 ## Datasets
 
-The folder *./data/* contains the following datasets from the UCR time series datasets provided by E. Keogh:
+The folder *./data/* contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) provided by E. Keogh:
 
 * CBF
 * Coffee
@@ -282,7 +282,7 @@ If you find jELC helpful, please cite it as
 
 If you use any of the UCR time series datasets provided with this release, please consult the website 
 
-   http://www.cs.ucr.edu/~eamonn/time_series_data/
+http://www.cs.ucr.edu/~eamonn/time_series_data/
 	
 and agree to the terms of use.
 

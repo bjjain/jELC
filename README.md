@@ -282,7 +282,7 @@ If you find jELC helpful, please cite it as
 
 If you use any of the UCR time series datasets provided with this release, please consult the website 
 
-    http://www.cs.ucr.edu/~eamonn/time_series_data/
+   http://www.cs.ucr.edu/~eamonn/time_series_data/
 	
 and agree to the terms of use.
 

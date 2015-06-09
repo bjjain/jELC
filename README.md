@@ -1,6 +1,5 @@
 # jELC
-jELC is a Java library that implements elastic linear classifiers for time series classification. Elastic linear classifiers extend linear classifiers to time series under dynamic time warping. This library currently supports the 
-following algorithms:
+jELC is a Java library that implements elastic linear classifiers for time series classification. Elastic linear classifiers extend linear classifiers to time series under dynamic time warping. This library currently supports the following algorithms:
 
 * elastic perceptron 
 * elastic margin perceptron
@@ -38,24 +37,22 @@ Requirements:
 - Contact
 
 
-Quick Start
-===========
+## Quick Start
 
-1. For application and development integrate jELC.jar into an IDE (e.g. Eclipse). 
+1. For application and development integrate *jELC.jar* into an IDE (e.g. Eclipse). 
 
 2. For quick application using the command line, specify options and call 
 
-         java -jar ELC options
+    ```java -jar elc.jar options```
 
 3. For experiments using UCR datasets, specify options and call
 
-         java -jar UCR options
+    ```java -jar ucr.jar options```
        
-See "Classifier Options" and "Command Line Usage" for a detailed description.
+See **Classifier Options** and **Command Line Usage** for a detailed description.
  
  
-Data Format
-===========
+## Data Format
 
 A data file contains one or more labeled time series. Each line of a data file 
 contains a class label y and a time series (x_1, ..., x_n) in the following 
@@ -70,35 +67,30 @@ If labels are not available, for example when predicting the class of unseen
 time series, include arbitrary integer values as labels. 
 
 
-Datasets
-========
+## Datasets
 
-The folder ./data/ contains the following datasets from the UCR time series 
-datasets provided by E. Keogh:
+The folder *./data/* contains the following datasets from the UCR time series datasets provided by E. Keogh:
 
-	CBF
-	Coffee
-	Beef
+* CBF
+* Coffee
+* Beef
 
-Each dataset consists of a directory containing a training and a test file dataset. When using these datasets for publication, please follow the rules as described 
-in section "Reference".
+Each dataset consists of a directory containing a training and a test file dataset. When using these datasets for publication, please follow the rules as described in section **Reference**.
 
 
-Classifier Options 
-==================
+## Classifier Options 
 
 CLF_OPTIONS are classifier options for setting the experimental protocol and 
 for specifying elastic linear classifiers. These options are valid for ELC and 
 UCR.
 
-CLF_OPTIONS:
-
+**CLF_OPTIONS:**
+```
 -S int    : Type of solver (default S = 0)
-
             0 -- elastic perceptron 
             1 -- elastic margin perceptron 
-            2 -- elastic logistic regression 
-            4 -- elastic linear SVM
+            2 -- elastic logistic regression
+            4 -- elastic linear SVM 
 -l double : Learning rate l > 0 (default l = 0.3)
 -e int    : Elasticitiy e > 0 (default e = 1)
 -R int    : type of regularization (default R = 0)
@@ -130,7 +122,7 @@ CLF_OPTIONS:
             3 -- parameter selection
             4 -- solver progress info by dots
             5 -- solver detailed progress info
-
+```
 
 Usage of ELC
 ============

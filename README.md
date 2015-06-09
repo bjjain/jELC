@@ -123,6 +123,7 @@ CLF_OPTIONS are classifier options for setting the experimental protocol and for
 ### Command Line Usage
 
 **USAGE:**
+
     ```java -jar ELC -train train_file [-test test_file] [-Z {0|1}] [clf_opts]```
 
 **OPTIONS:**
@@ -139,62 +140,44 @@ clf_opts        : list of options as described in CLF_OPTIONS
 Examples
 --------
 
-In the following examples, train_file and test_file refer to the paths of the training and test data, respectively. 
+In the following examples, *train_file* and *test_file* refer to the paths of the training and test data, respectively. 
 
-> java -jar elc.jar -train train_file -test test_file
+```java -jar elc.jar -train train_file -test test_file```
 
-Uses train_file to fit elastic perceptron. Estimates predictive accuracy on 
-test_data. 
+Uses train_file to fit elastic perceptron. Estimates predictive accuracy on test_file. 
 
+```java -jar elc.jar -train train_file -test test_file -S 2```
 
-> java -jar elc.jar -train train_file -test test_file -S 2
-
-Uses train_file to fit elastic logistic regression. Estimates predictive 
-accuracy on test_data. 
+Uses train_file to fit elastic logistic regression. Estimates predictive accuracy on test_file. 
 
 
-> java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1
+```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1```
 
-Uses train_file to fit elastic logistic regression with initial learning rate 
-l = 0.1. Estimates predictive accuracy on test_data.  
+Uses train_file to fit elastic logistic regression with initial learning rate l = 0.1. Estimates predictive accuracy on test_file.  
 
+```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1 -R 1 -r 0.05```
 
-> java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1 -R 1 -r 0.05
+Uses train_file to fit elastic  L1-regularized logistic regression with regularization parameter r = 0.05 and initial learning rate l = 0.1. Estimates predictive accuracy on test_file.  
 
-Uses train_file to fit elastic  L1-regularized logistic regression with 
-regularization parameter r = 0.05 and initial learning rate l = 0.1. Estimates 
-predictive accuracy on test_data.  
+```java -jar elc.jar -train train_file -test test_file -S 3 -l 0.1 -m 1 -R 2 -r 0.2```
 
+Uses train_file to fit elastic linear SVM with initial learning rate l = 0.1 and L2-regularization parameter r  = 0.2. Estimates predictive accuracy on test_file.   
 
-> java -jar elc.jar -train train_file -test test_file -S 3 -l 0.1 -m 1 -R 2 -r 0.2
-
-Uses train_file to fit elastic linear SVM with initial learning rate l = 0.1 and
-L2-regularization parameter r  = 0.2. Estimates predictive accuracy on test_data.   
-
-
-> java -jar elc.jar -train train_file -x 10
+```java -jar elc.jar -train train_file -x 10```
 
 Applies 10-fold cross-validation on train_file using an elastic perceptron. 
 
-
-> java -jar elc.jar -train train_file -x 1
+```java -jar elc.jar -train train_file -x 1```
 
 Applies leave-one-out validation on train_file using an elastic perceptron. 
 
+```java -jar elc.jar -train train_file -test test_file -S 0 -p 1```
 
-> java -jar elc.jar -train train_file -test test_file -S 0 -p 1
+Performs parameter selection on train_file. Since option -R is not set and -m is not valid for elastic perceptron, parameters for -e and -l are tuned. Uses train_file to fit elastic perceptron with best parameters found. Estimates predictive accuracy on test_file. 
 
-Performs parameter selection on train_file. Since option -R is not set and -m is
-not valid for elastic perceptron, parameters for -e and -l are tuned. Uses 
-train_file to fit elastic perceptron with best parameters found. Estimates 
-predictive accuracy on test_file. 
+```java -jar elc.jar -train train_file -test test_file -S 2 -R 1 -r 0.1 -p 1```
 
-> java -jar elc.jar -train train_file -test test_file -S 2 -R 1 -r 0.1 -p 1
-
-Performs parameter selection on train_file for elastic margin perceptron. 
-Tunes parameters -e, -l, -m, and -r. Uses train_file to fit elastic margin 
-perceptron with best parameters found. Estimates predictive accuracy on 
-test_file.   
+Performs parameter selection on train_file for elastic margin perceptron. Tunes parameters -e, -l, -m, and -r. Uses train_file to fit elastic margin perceptron with best parameters found. Estimates predictive accuracy on test_file.   
 
 
 Usage of UCR

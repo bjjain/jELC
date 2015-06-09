@@ -6,13 +6,14 @@ jELC is a Java library that implements elastic linear classifiers for time serie
 * elastic logistic regression
 * elastic linear support vector machine.
 
-jELC uses the one-against-all method for multi-class classification problems.
-Additional features are
+jELC uses the one-against-all method for multi-class classification problems. Additional features are
 
 * L1 and L2 regularization
 * cross-validation and leave-one-out validation
 * automated parameter selection
 * supports experiments on UCR time series datasets.
+
+Details on the algorithms can be found in the paper [Generalized Gradient Learning on Time Series under Elastic Transformations](http://arxiv.org/abs/1502.04843).
 
 Requirements: 
 

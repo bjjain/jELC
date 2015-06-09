@@ -142,11 +142,11 @@ Examples
 
 In the following examples, *train_file* and *test_file* refer to the paths of the training and test data, respectively. 
 
-```java -jar elc.jar -train train_file -test test_file```
+1. ```java -jar elc.jar -train train_file -test test_file```
 
 Uses train_file to fit elastic perceptron. Estimates predictive accuracy on test_file. 
 
-```java -jar elc.jar -train train_file -test test_file -S 2```
+2. ```java -jar elc.jar -train train_file -test test_file -S 2```
 
 Uses train_file to fit elastic logistic regression. Estimates predictive accuracy on test_file. 
 

@@ -154,48 +154,41 @@ In the following examples, *train_file* and *test_file* refer to the paths of th
 
    Uses train_file to fit elastic logistic regression with initial learning rate l = 0.1. Estimates predictive accuracy on   test_file.  
 
-```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1 -R 1 -r 0.05```
+4. ```java -jar elc.jar -train train_file -test test_file -S 2 -l 0.1 -R 1 -r 0.05```
 
-Uses train_file to fit elastic  L1-regularized logistic regression with regularization parameter r = 0.05 and initial learning rate l = 0.1. Estimates predictive accuracy on test_file.  
+   Uses train_file to fit elastic  L1-regularized logistic regression with regularization parameter r = 0.05 and initial learning rate l = 0.1. Estimates predictive accuracy on test_file.  
 
-```java -jar elc.jar -train train_file -test test_file -S 3 -l 0.1 -m 1 -R 2 -r 0.2```
+5. ```java -jar elc.jar -train train_file -test test_file -S 3 -l 0.1 -m 1 -R 2 -r 0.2```
 
-Uses train_file to fit elastic linear SVM with initial learning rate l = 0.1 and L2-regularization parameter r  = 0.2. Estimates predictive accuracy on test_file.   
+   Uses train_file to fit elastic linear SVM with initial learning rate l = 0.1 and L2-regularization parameter r  = 0.2. Estimates predictive accuracy on test_file.   
 
-```java -jar elc.jar -train train_file -x 10```
+6. ```java -jar elc.jar -train train_file -x 10```
 
-Applies 10-fold cross-validation on train_file using an elastic perceptron. 
+   Applies 10-fold cross-validation on train_file using an elastic perceptron. 
 
-```java -jar elc.jar -train train_file -x 1```
+7. ```java -jar elc.jar -train train_file -x 1```
 
-Applies leave-one-out validation on train_file using an elastic perceptron. 
+   Applies leave-one-out validation on train_file using an elastic perceptron. 
 
-```java -jar elc.jar -train train_file -test test_file -S 0 -p 1```
+8. ```java -jar elc.jar -train train_file -test test_file -S 0 -p 1```
 
-Performs parameter selection on train_file. Since option -R is not set and -m is not valid for elastic perceptron, parameters for -e and -l are tuned. Uses train_file to fit elastic perceptron with best parameters found. Estimates predictive accuracy on test_file. 
+   Performs parameter selection on train_file. Since option -R is not set and -m is not valid for elastic perceptron, parameters for -e and -l are tuned. Uses train_file to fit elastic perceptron with best parameters found. Estimates predictive accuracy on test_file. 
 
-```java -jar elc.jar -train train_file -test test_file -S 2 -R 1 -r 0.1 -p 1```
+9. ```java -jar elc.jar -train train_file -test test_file -S 2 -R 1 -r 0.1 -p 1```
 
-Performs parameter selection on train_file for elastic margin perceptron. Tunes parameters -e, -l, -m, and -r. Uses train_file to fit elastic margin perceptron with best parameters found. Estimates predictive accuracy on test_file.   
+   Performs parameter selection on train_file for elastic margin perceptron. Tunes parameters -e, -l, -m, and -r. Uses train_file to fit elastic margin perceptron with best parameters found. Estimates predictive accuracy on test_file.   
 
 
-Usage of UCR
-============
+## Usage of ucr.jar
 
-jELC supports experiments on the UCR time series datasets. The UCR time series 
-datasets are a widely used benchmark for classification and clustering of time 
-series. The datasets are publicly available and can be 
-accessed at 
+jELC supports experiments on the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/). The UCR time series datasets are a widely used benchmark for classification and clustering of time series. 
 
-    http://www.cs.ucr.edu/~eamonn/time_series_data/
+Each UCR dataset consists of a train and test set. The name convention for a dataset with name *Foo* is 
 
-Each UCR dataset consists of a train and test set. The name convention for a 
-dataset with name Foo is 
+- *Foo_TRAIN* for the training set
+- *Foo_TEST* for the test set
 
-    - Foo_TRAIN for the training set
-    - Foo_TEST for the test set
-
-Training and test file must be both stored in a directory with name Foo. 
+Training and test file must be both stored in a directory with name *Foo*. 
 
 
 Command Line Usage

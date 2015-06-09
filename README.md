@@ -277,7 +277,7 @@ For experiments on UCR datasets, set the following variables in class *apps.UCR*
 If you find jELC helpful, please cite it as
 
 > B. Jain. 
-> Generalized Gradient Learning on Time Series. 
+> *Generalized Gradient Learning on Time Series*. 
 > Machine Learning, 2015 (accepted for publication).
 
 If you use any of the UCR time series datasets provided with this release, please consult the website 
@@ -287,7 +287,7 @@ http://www.cs.ucr.edu/~eamonn/time_series_data/
 and agree to the terms of use. Please cite the UCR datasets as 
 
 > Keogh, E., Zhu, Q., Hu, B., Hao. Y.,  Xi, X., Wei, L. & Ratanamahatana, C.A. (2011). 
-> The UCR Time Series Classification/Clustering Homepage: http://www.cs.ucr.edu/~eamonn/time_series_data/
+> *The UCR Time Series Classification/Clustering Homepage*: http://www.cs.ucr.edu/~eamonn/time_series_data/
 
 
 

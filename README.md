@@ -54,17 +54,13 @@ See **Classifier Options** and **Command Line Usage** for a detailed description
  
 ## Data Format
 
-A data file contains one or more labeled time series. Each line of a data file 
-contains a class label y and a time series (x_1, ..., x_n) in the following 
-format:
+A data file contains one or more labeled time series. Each line of a data file contains a class label y and a time series (x_1, ..., x_n) in the following format:
 
     y x_1 x_2 ... x_n
 
-The class label y must be an integer. The elements x_i of the time series are
-real numbers. All numbers are separated by space.
+The class label y must be an integer. The elements x_i of the time series are real numbers. All numbers are separated by space.
 
-If labels are not available, for example when predicting the class of unseen 
-time series, include arbitrary integer values as labels. 
+If labels are not available, for example when predicting the class of unseen time series, include arbitrary integer values as labels. 
 
 
 ## Datasets

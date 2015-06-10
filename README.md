@@ -260,7 +260,7 @@ The -x option for setting the number of cross-validation folds is disabled. Use 
 
 ## Usage of jELC.jar
 
-Integrate *jELC.jar* into an IDE (e.g. Eclipse). The main java classes are *ELC* and *UCR* contained in package *apps*. The files *elc.jar* and *ucr.jar* are both runnable jar files of *ELC* and *UCR*. Classifier options can be set in both classes as described in section **Classifier Options** using the 'String' variable 'opts'.
+Integrate *jELC.jar* into an IDE (e.g. Eclipse). The main java classes are *ELC* and *UCR* contained in package *apps*. The files *elc.jar* and *ucr.jar* are both runnable jar files of *ELC* and *UCR*. Classifier options can be set in both classes as described in section **Classifier Options** using the `String` variable `opts`.
 
 The package *examples* contains classes that show how to use jELC. For experiments on UCR datasets, set the following variables in class *apps.UCR*:
 

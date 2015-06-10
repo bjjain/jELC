@@ -23,30 +23,30 @@ Details on the algorithms can be found in the paper [Generalized Gradient Learni
 
 ## Table of Contents
 
-- Quick Start
+- Overview
 - Data Format
 - Datasets
 - Classifier Options
-- Usage of elc.jar
+- Usage of *elc.jar*
     - Command Line Usage
     - Examples 
-- Usage of ucr.jar
+- Usage of *ucr.jar*
     - Command Line Usage
     - Examples
-- Usage of API
+- Usage of *jELC.jar*
 - Reference
 - Contact
 
 
-## Quick Start
+## Overview
 
-1. For application and development integrate *jELC.jar* into an IDE (e.g. Eclipse). 
+1. **jELC.jar:** For application and development integrate *jELC.jar* into an IDE (e.g. Eclipse). 
 
-2. For quick application using the command line, specify options and call 
+2. **elc.jar:** For application using the command line, specify options and call 
 
     ```java -jar elc.jar options```
 
-3. For experiments using UCR datasets, specify options and call
+3. **ucr.jar:** For experiments using UCR datasets, specify options and call
 
     ```java -jar ucr.jar options```
        
@@ -258,11 +258,11 @@ The -x option for setting the number of cross-validation folds is disabled. Use 
    Merges *Coffee_TRAIN* and *Coffee_TEST* to a single dataset X. Applies K-fold cross-validation on X using elastic perceptron with initial learning rate l = 0.3. Performs parameter selection on each train set train_k, where 1 <= k <= K. Tunes parameters -e and -l. Uses train set train_k to fit elastic perceptron with best parameters found. Estimates predictive accuracy on k-th test set. Experiment is repeated N = 10 times.
 
 
-## Usage of API
+## Usage of jELC.jar
 
-Integrate *jELC.zip* into an IDE (e.g. Eclipse). See API documentation. 
+Integrate *jELC.jar* into an IDE (e.g. Eclipse). The main java classes are *ELC* and *UCR* contained in package *apps*. The files *elc.jar* and *ucr.jar* are both runnable jar files of *ELC* and *UCR*. Classifier options can be set in both classes as described in section **Classifier Options** using the 'String' variable 'opts'.
 
-For experiments on UCR datasets, set the following variables in class *apps.UCR*:
+The package *examples* contains classes that show how to use jELC. For experiments on UCR datasets, set the following variables in class *apps.UCR*:
 
     String path;    corresponds to option -dir 
     String ucr;     corresponds to option -ucr
@@ -271,6 +271,7 @@ For experiments on UCR datasets, set the following variables in class *apps.UCR*
     double K;       corresponds to option -K
     String opts;    corresponds to list of options clf_options
 
+See the API documentation for further information. 
 
 ## References
 
